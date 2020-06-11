@@ -21,8 +21,10 @@ public class DeptController {
 		
 		List<Dept> list=deptService.findAll();
 		model.addAttribute("list", list);
-		
+		System.out.println("111111111111");
 		return "list";
+		
+		
 		
 	}
 }
