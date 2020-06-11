@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="context1" targetRuntime="Mybatis3">
+		<!-- jdbcConnection connectionURL连接位置 driverClass驱动 password 密码 userid 用户名 -->
+		<jdbcConnection connectionURL="jdbc:mysql://localhost:3306/demo0527?characterEncoding=utf8&amp;serverTimezone=UTC&amp;nullCatalogMeansCurrent=true" driverClass="com.mysql.cj.jdbc.Driver" password="123456"
+			userId="root" />
+		<!-- 生成封装类 targetPackage目标包 targetProject目标工程 -->
+		<javaModelGenerator targetPackage="com.woniu.entity" targetProject="SpringBoot28" />
+		<!-- 生成xml文件 -->
+		<sqlMapGenerator targetPackage="com.woniu.mapper" targetProject="SpringBoot28"></sqlMapGenerator>
+		<!-- 生成Mapper接口 -->
+		<javaClientGenerator targetPackage="com.woniu.mapper" targetProject="SpringBoot28" type="XMLMAPPER" />
+		<!-- 使用的数据库和表 -->
+		<table schema="demo0527" tableName="dept"></table>
+		<table schema="demo0527" tableName="emp"></table>
+	</context>
+</generatorConfiguration>
