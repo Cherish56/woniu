@@ -23,10 +23,5 @@ public class DeptServiceImpl implements DeptService{
 	}
 
 
-	@Override
-	public void v() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

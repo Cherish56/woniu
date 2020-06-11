@@ -8,5 +8,5 @@ public interface DeptService {
 
 	List<Dept> findAll();
 	
-    void v();
+    
 }
